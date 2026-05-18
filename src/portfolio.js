@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "RajatBhopte",
   nickname: "Rajat",
   subTitle:
-    "Empowering businesses by engineering high-impact MERN dashboards and automated workflows. By transforming operational bottlenecks into cloud-ready systems, I build LLM integrations, optimized resume matchers, and secure APIs that drive up to 10x efficiency.",
+    "Building high-impact MERN dashboards and LLM-powered workflows that transform operational bottlenecks into secure, 10x more efficient cloud-ready systems.",
   resumeLink:
     "https://drive.google.com/file/d/1qV1DYG9J-Evz7iXHhVZoXBfwCQTP9uKP/view",
   portfolio_repository: "https://github.com/RajatBhopte/masterPortfolio",
