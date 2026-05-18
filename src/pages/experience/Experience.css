@@ -3,16 +3,20 @@
 }
 
 .basic-experience {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .experience-heading-div {
   display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
 }
 
 .experience-heading-div > * {
   flex: 1;
+  min-width: 0;
 }
 
 .experience-heading-img-div {
@@ -21,68 +25,93 @@
   justify-content: center;
 }
 
-.experience-heading-text-div {
-  text-align: center;
-}
-
 .experience-heading-img-div > * {
   max-width: 100%;
   height: auto;
 }
 
+.experience-heading-text-div {
+  text-align: left;
+}
+
 .experience-heading-text {
   font-size: 56px;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "Google Sans Medium";
   line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .experience-heading-sub-text {
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
+  text-align: left;
+  margin: 0 0 14px 0;
+  font-weight: 500;
+  opacity: 0.85;
 }
 
 .experience-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Google Sans Regular";
 }
 
 @media (max-width: 1380px) {
   .experience-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
+    font-size: 46px;
   }
   .experience-heading-sub-text {
-    font-size: 25px;
+    font-size: 24px;
+  }
+  .experience-header-detail-text {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .basic-experience {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .experience-heading-text {
+    font-size: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .experience-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .experience-heading-sub-text {
-    font-size: 20px;
+  .basic-experience {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .experience-heading-div {
     flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .experience-heading-text-div {
+    text-align: center;
+  }
+
+  .experience-heading-text {
+    font-size: 32px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .experience-heading-sub-text {
+    font-size: 20px;
+    text-align: center;
   }
 
   .experience-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
+    font-size: 15px;
+    line-height: 1.55;
     text-align: center;
   }
 }

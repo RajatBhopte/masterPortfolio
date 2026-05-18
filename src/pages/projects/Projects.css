@@ -1,19 +1,22 @@
 .projects-main {
   width: 100%;
-  text-align: center;
 }
 
 .basic-projects {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .projects-heading-div {
   display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
 }
 
 .projects-heading-div > * {
   flex: 1;
+  min-width: 0;
 }
 
 .projects-heading-img-div {
@@ -22,39 +25,42 @@
   justify-content: center;
 }
 
-.projects-heading-text-div {
-  text-align: center;
-}
-
 .projects-heading-img-div > * {
   max-width: 100%;
   height: auto;
 }
 
+.projects-heading-text-div {
+  text-align: left;
+}
+
 .projects-heading-text {
   font-size: 56px;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "Google Sans Medium";
   line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 14px;
 }
 
 .projects-heading-sub-text {
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
+  text-align: left;
+  margin: 0 0 14px 0;
+  font-weight: 500;
+  opacity: 0.85;
 }
 
 .projects-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Google Sans Regular";
+  text-align: left;
 }
+
 .publications-heading-text-div {
   text-align: center;
   font-family: "Google Sans Regular";
@@ -65,6 +71,7 @@
   font-size: 56px;
   font-weight: 600;
 }
+
 .repo-cards-div-main {
   display: flex;
   flex-direction: row;
@@ -77,35 +84,62 @@
 
 @media (max-width: 1380px) {
   .projects-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
+    font-size: 46px;
   }
   .projects-heading-sub-text {
-    font-size: 25px;
+    font-size: 24px;
+  }
+  .projects-header-detail-text {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .basic-projects {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .projects-heading-text {
+    font-size: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .projects-heading-text,
-  .publications-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .projects-heading-sub-text {
-    font-size: 20px;
+  .basic-projects {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .projects-heading-div {
     flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .projects-heading-text-div {
+    text-align: center;
+  }
+
+  .projects-heading-text {
+    font-size: 32px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .projects-heading-sub-text {
+    font-size: 20px;
+    text-align: center;
   }
 
   .projects-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
-    line-height: normal;
+    font-size: 15px;
+    line-height: 1.55;
     text-align: center;
+  }
+
+  .publications-heading-text {
+    font-size: 30px;
+    margin-top: 20px;
   }
 
   .repo-cards-div-main {

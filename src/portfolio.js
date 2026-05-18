@@ -445,40 +445,33 @@ const experience = {
   header_image_path: "experience.svg",
 
   sections: [
-    // {
-    //   title: "Work",
-    //   work: true,
-    //   experiences: [
-    //     {
-    //       title: "Full Stack Web Developer",
-    //       company: ".",
-    //       company_url: "https://www.tiktok.com/en/",
-    //       logo_path: "company_logo.png",
-    //       duration: "June 2023 - Present",
-    //       location: "San Jose, CA, USA",
-    //       description:
-    //         "Improving ads ranking models on the core TikTok product. Experience working on modeling two-tower architectures like DeepFM, Wide & deep learning, etc. Working on Large Language Models (LLM) pretraining and Large Multi-modal Model (LMM) finetuning strategies.",
-    //       color: "#000000",
-    //     },
-    //   ],
-    // },
     {
-      title: "Internships",
+      title: "Work & Internships",
       experiences: [
         {
-          title: "Full Stack Web Developer Intern",
-          company: "Cognifyz Technology.",
-          company_url: "https://cognifyz.com/",
-          logo_path: "company_logo.png",
-          duration: "June 2025 - Aug 2025",
+          title: "Full Stack Developer",
+          company: "Cunard AI",
+          company_url: "https://cunard.ai/",
+          logo_path: "cunard_ai_logo.png",
+          duration: "May 2026 – Present",
           location: "Remote",
           description:
-            "Developed a Gmail expense automation system using Node.js, Express, OAuth and n8n workflows, enabling automatic parsing, synchronization and structured expense tracking without manual entry.",
-          color: "#000000",
+            "– Engineered COBOL-to-multilanguage transpiler supporting Node.js, Python, C#, and PHP, delivering production-grade code with proper async I/O patterns and structured error handling across 16+ real COBOL programs.\n– Accelerated development by integrating OpenAI GPT-4o-mini API with advanced prompt engineering and built Express.js REST endpoints for programmatic code conversion, achieving 100% conversion reliability.\n– Validated converted code through Postman API testing framework and maintained clean Git/GitHub workflows, ensuring code quality and seamless team collaboration.",
+          color: "#0879bf",
+        },
+        {
+          title: "Full Stack Developer Intern",
+          company: "AJs Chalo Seekhen",
+          company_url: "https://chaloseekhen.com/",
+          logo_path: "chalo_seekhen_logo.png",
+          duration: "Feb 2026 – April 2026",
+          location: "Indore, M.P.",
+          description:
+            "– Streamlined version control and team collaboration utilizing Git and GitHub, resulting in the successful approval and merging of multiple pull requests.\n– Accelerated the development lifecycle by integrating Claude, OpenAI, and Google Gemini APIs for code generation, automated code reviews, and system optimization.\n– Consistently met strict project deadlines while maintaining comprehensive technical documentation and demonstrating strong cross-functional communication skills.",
+          color: "#9b1578",
         }
       ],
     }
-    
   ],
 };
 
