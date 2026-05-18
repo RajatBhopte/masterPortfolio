@@ -1,84 +1,33 @@
-import React, { useState, useEffect } from "react";
-import ApolloClient from "apollo-boost";
-import { gql } from "apollo-boost";
+import React from "react";
 import "./Project.css";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import Button from "../../components/button/Button";
-import { openSource } from "../../portfolio";
-import { greeting } from "../../portfolio.js";
+import { Fade } from "react-reveal";
+import ProjectsData from "../../shared/opensource/projects.json";
 
-export default function Projects() {
-  const [repo, setrepo] = useState([]);
-
-  useEffect(() => {
-    getRepoData();
-  }, []);
-
-  function getRepoData() {
-    const client = new ApolloClient({
-      uri: "https://api.github.com/graphql",
-      request: (operation) => {
-        operation.setContext({
-          headers: {
-            authorization: `Bearer ${atob(openSource.githubConvertedToken)}`,
-          },
-        });
-      },
-    });
-
-    client
-      .query({
-        query: gql`
-          {
-            repositoryOwner(login: "${openSource.githubUserName}") {
-              ... on User {
-                pinnedRepositories(first: 6) {
-                  edges {
-                    node {
-                      nameWithOwner
-                      description
-                      forkCount
-                      stargazers {
-                        totalCount
-                      }
-                      url
-                      id
-                      diskUsage
-                      primaryLanguage {
-                        name
-                        color
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        `,
-      })
-      .then((result) => {
-        setrepoFunction(result.data.repositoryOwner.pinnedRepositories.edges);
-        console.log(result);
-      });
-  }
-
-  function setrepoFunction(array) {
-    setrepo(array);
-  }
+export default function Projects(props) {
+  const theme = props.theme;
 
   return (
     <div className="main" id="opensource">
-      <h1 className="project-title">Open Source Projects</h1>
+      <div className="skills-header-div">
+        <Fade bottom duration={2000} distance="20px">
+          <h1 className="skills-header" style={{ color: theme.text }}>
+            Projects
+          </h1>
+        </Fade>
+      </div>
       <div className="repo-cards-div-main">
-        {repo.map((v, i) => {
-          return <GithubRepoCard repo={v} key={v.node.id} />;
+        {ProjectsData.data.map((repo) => {
+          return <GithubRepoCard repo={repo} theme={theme} key={repo.id} />;
         })}
       </div>
       <Button
         text={"More Projects"}
         className="project-button"
-        href={greeting.githubProfile}
-        newTab={true}
+        href="/projects"
+        newTab={false}
+        theme={theme}
       />
     </div>
   );

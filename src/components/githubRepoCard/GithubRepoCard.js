@@ -10,9 +10,24 @@ export default function GithubRepoCard({ repo, theme }) {
   }
 
   return (
-    <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
+    <div
+      className="repo-card-div"
+      style={{
+        backgroundColor: "transparent",
+        border: `1px solid ${theme.secondaryText}33`,
+      }}
+    >
       <Fade bottom duration={2000} distance="40px">
         <div key={repo.id} onClick={() => openRepoinNewTab(repo.url)}>
+          {repo.image && (
+            <div className="repo-image-div">
+              <img
+                src={`${process.env.PUBLIC_URL}/${repo.image}`}
+                alt={repo.name}
+                className="repo-image"
+              />
+            </div>
+          )}
           <div className="repo-name-div">
             <svg
               aria-hidden="true"
@@ -35,12 +50,6 @@ export default function GithubRepoCard({ repo, theme }) {
             {repo.description}
           </p>
           <div className="repo-details">
-            <p
-              className="repo-creation-date subTitle"
-              style={{ color: theme.secondaryText }}
-            >
-              Created on {repo.createdAt.split("T")[0]}
-            </p>
             <ProjectLanguages
               className="repo-languages"
               logos={repo.languages}

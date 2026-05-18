@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "RajatBhopte",
   nickname: "Rajat",
   subTitle:
-    "A full-stack MERN and automation developer who enjoys building end-to-end applications, scalable dashboards, and workflow systems that solve real business problems using clean architecture, REST APIs, LLM integrations, and cloud-ready deployments.",
+    "Empowering businesses by engineering high-impact MERN dashboards and automated workflows. By transforming operational bottlenecks into cloud-ready systems, I build LLM integrations, optimized resume matchers, and secure APIs that drive up to 10x efficiency.",
   resumeLink:
     "https://drive.google.com/file/d/1qV1DYG9J-Evz7iXHhVZoXBfwCQTP9uKP/view",
   portfolio_repository: "https://github.com/RajatBhopte/masterPortfolio",
@@ -135,10 +135,10 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive web applications using React.js and Tailwind CSS",
-        "⚡ Creating secure backend APIs in Node.js & Express.js with authentication and JWT",
-        "⚡ Integrating n8n and LLM-powered automation workflows for business processes",
-        "⚡ Handling database operations and data modeling using MongoDB and MySQL",
+        "⚡ Engineering responsive, high-performance web applications using React.js and Tailwind CSS for seamless user experience.",
+        "⚡ Developing secure, production-grade REST APIs in Node.js and Express with robust JWT authentication and middleware protection.",
+        "⚡ Architecting LLM-powered AI integrations and n8n workflows that automate manual processes and optimize business workflows.",
+        "⚡ Designing scalable database schemas and executing optimized queries using MongoDB and MySQL for reliable data storage.",
       ],
       softwareSkills: [
         {

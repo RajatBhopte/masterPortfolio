@@ -1,48 +1,112 @@
 {
   "data": [
     {
-      "id": "R_kgDOJWL0-g",
-      "name": "Expenser-Tracker",
-      "createdAt": "Jan-2025",
-      "url": "https://expensertracker.vercel.app/",
-      "description": "A Full-Stack Expense Tracker Application to Manage Personal Finances Effectively.",
+      "id": "stocksenseai-project",
+      "name": "StockSenseAI",
+      "createdAt": "May-2026",
+      "url": "https://stocksenseai.app/",
+      "description": "An AI-powered Stock News Analyzer using FinBERT model to analyze real-time market sentiment across thousands of stocks from live news feeds.",
       "isFork": false,
+      "image": "stock_news_analyzer.png",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "ReactJS",
+          "iconifyClass": "logos:react"
+        },
+        {
+          "name": "TensorFlow",
+          "iconifyClass": "logos:tensorflow"
+        },
+        {
+          "name": "PyTorch",
+          "iconifyClass": "logos:pytorch"
+        }
+      ]
+    },
+    {
+      "id": "plinkogame-project",
+      "name": "Plinko Game",
+      "createdAt": "June-2025",
+      "url": "https://plinko-game-project.vercel.app/",
+      "description": "An interactive physics-based Plinko Game simulation built with React and HTML5 Canvas, featuring smooth ball drop physics, collision detection, and customizable multiplier layouts.",
+      "isFork": false,
+      "image": "plinkogame.png",
       "languages": [
         {
           "name": "ReactJS",
-          "iconifyClass": "logos-react"
+          "iconifyClass": "logos:react"
         },
         {
-          "name": "Node.js",
-          "iconifyClass": "devicon-plain:nodejs-wordmark"
+          "name": "JavaScript",
+          "iconifyClass": "logos:javascript"
         },
         {
-          "name": "mongodb",
-          "iconifyClass": "simple-icons:mongodb"
+          "name": "HTML5",
+          "iconifyClass": "logos:html-5"
+        },
+        {
+          "name": "CSS3",
+          "iconifyClass": "logos:css-3"
         }
       ]
     },
 
     {
-      "id": "R_kgDOG_vYHA",
-      "name": "Video-Vault",
-      "createdAt": "March-2025",
-      "url": "https://videovault-beta.vercel.app/",
-      "description": "A video streaming platform for sharing and discovering videos.",
+      "id": "golf-charity-project",
+      "name": "Golf - Charity",
+      "createdAt": "July-2025",
+      "url": "https://swingsave.vercel.app/",
+      "description": "A comprehensive tournament management platform for charity golf events, featuring live scoring trackers, interactive leaderboard standings, player registration dashboards, and digital donation tools.",
       "isFork": false,
+      "image": "golf.png",
       "languages": [
-       {
-         "name": "ReactJS",
-         "iconifyClass": "logos-react"
-       },
-       {
-         "name": "Node.js",
-         "iconifyClass": "devicon-plain:nodejs-wordmark"
-       },
-       {
-         "name": "mongodb",
-         "iconifyClass": "simple-icons:mongodb"
-       }
+        {
+          "name": "ReactJS",
+          "iconifyClass": "logos:react"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos:javascript"
+        },
+        {
+          "name": "TailwindCSS",
+          "iconifyClass": "logos:tailwindcss"
+        },
+        {
+          "name": "HTML5",
+          "iconifyClass": "logos:html-5"
+        }
+      ]
+    },
+    {
+      "id": "deopvrinfra-project",
+      "name": "Deopvr Infra",
+      "createdAt": "August-2025",
+      "url": "https://deopvrinfra.vercel.app/",
+      "description": "A premium, fully interactive corporate landing page built for an infrastructure and real-estate firm, featuring modern typography, fluid CSS layouts, smooth animations, and highly optimized responsive lead forms.",
+      "isFork": false,
+      "image": "landingpage.png",
+      "languages": [
+        {
+          "name": "ReactJS",
+          "iconifyClass": "logos:react"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos:javascript"
+        },
+        {
+          "name": "HTML5",
+          "iconifyClass": "logos:html-5"
+        },
+        {
+          "name": "CSS3",
+          "iconifyClass": "logos:css-3"
+        }
       ]
     },
     {
@@ -50,48 +114,46 @@
       "name": "ATS-Resume-Matcher",
       "createdAt": "Aug-2025",
       "url": "https://ats-resume-matcher-inky.vercel.app/",
-      "description": "ATS-Resume-Matcher is a tool designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS).",
+      "description": "An AI-powered ATS Resume Matcher that parses, analyzes, and scores resumes against job descriptions, offering detailed keyword optimization insights to bypass Applicant Tracking Systems.",
       "isFork": false,
+      "image": "ats.png",
       "languages": [
-       {
-         "name": "ReactJS",
-         "iconifyClass": "logos-react"
-       },
+        {
+          "name": "ReactJS",
+          "iconifyClass": "logos:react"
+        },
         {
           "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-
+          "iconifyClass": "logos:javascript"
         },
-       {
-         "name": "Google Gemini AI",
-         "iconifyClass": "logos-google-gemini"
-       }
-
-       
+        {
+          "name": "Google Gemini AI",
+          "iconifyClass": "logos:google-gemini"
+        }
       ]
     },
     {
       "id": "R_kgDOG0_8uQ",
       "name": "AI-trip-planner",
       "createdAt": "June-2024",
-      "url": "https://ai-trip-planner-qr9u.vercel.app/",
-      "description": "An AI-Powered Trip Planner that generates personalized travel itineraries based on user preferences and interests.",
+      "url": "https://ai-trip-planner-one-pi.vercel.app/",
+      "description": "A highly personalized AI-Powered Trip Planner that generates custom day-by-day travel itineraries based on user interests, budget constraints, destinations, and trip durations using Gemini AI.",
       "isFork": false,
+      "image": "aitrip.png",
       "languages": [
         {
-
-          "name":"NextJS",
-          "iconifyClass":"simple-icons:nextdotjs"
+          "name": "NextJS",
+          "iconifyClass": "logos:nextjs-icon"
         },
        
         {
           "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
+          "iconifyClass": "logos:javascript"
         },
         
          {
          "name": "Google Gemini AI",
-         "iconifyClass": "logos-google-gemini"
+         "iconifyClass": "logos:google-gemini"
        }
 
       ]
